@@ -1,0 +1,68 @@
+.fourSteps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 624px;
+    margin: 55px 0 80px;
+    color: $color-fifth;
+
+    h3 {
+        text-align: center;
+        font-size: 38px;
+        font-weight: normal;
+    }
+
+    .fourSteps_content {
+        background-color: $color-first;
+        display: flex;
+        width: 100%;
+        height: 325px;
+        padding: 0 414px;
+        justify-content: space-between;
+        align-items: center;
+
+        .fourSteps_article {
+            max-width: 150px;
+            min-height: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            text-align: center;
+
+            h5 {
+                font-size: 18px;
+                font-weight: normal;
+            }
+
+            div {
+                height: 1px;
+                width: 70px;
+                background-color: #707070;
+                margin: 7px 0;
+            }
+
+            p {
+                font-size: 16px;
+                margin: 0;
+            }
+        }
+    }
+
+    button {
+        border-radius: 0;
+        border-color: $color-fifth;
+        color: $color-fifth;
+        width: 310px;
+        font-size: 36px;
+        text-align: center;
+        padding: 13px;
+
+        &:hover {
+            background-color: $color-fifth;
+            color: $color-first;
+        }
+    }
+}
