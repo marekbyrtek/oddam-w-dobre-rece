@@ -1,18 +1,13 @@
 import React from "react";
-import { Link, Element } from "react-scroll";
+import { Element } from "react-scroll";
+import AboutUsContent from "./AboutUsContent";
+import people from "../../../assets/People.jpg";
 
 const HomeAboutUs = () => {
     return (
-        <Element name="aboutUs" style={{height: "100vh"}}>
-            <h1>O nas</h1>
-            <ul>
-                <li><Link to="header" smooth={true} duration={1000}>Nagłówek</Link></li>
-                <li><Link to="threeColumns" smooth={true} duration={1000}>Trzy kolumny</Link></li>
-                <li><Link to="fourSteps" smooth={true} duration={1000}>Wystarczą 4 proste kroki</Link></li>
-                <li><Link to="aboutUs" smooth={true} duration={1000}>O nas</Link></li>
-                <li><Link to="whoWeHelp" smooth={true} duration={1000}>Komu pomagamy</Link></li>
-                <li><Link to="contact" smooth={true} duration={1000}>Skontaktuj się z nami</Link></li>
-            </ul>
+        <Element name="aboutUs" className="aboutUs">
+            <AboutUsContent />
+            <img src={people} alt="people" />
         </Element>
     )
 }

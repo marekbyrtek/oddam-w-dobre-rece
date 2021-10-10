@@ -1,0 +1,32 @@
+.aboutUs {
+    height: 935px;
+    display: flex;
+    overflow: hidden;
+
+    .aboutUs_content {
+        min-width: 950px;
+        background-color: $color-first;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 150px;
+        color: $color-fifth;
+        text-align: center;
+
+        h3 {
+            font-size: 38px;
+            font-weight: normal;
+            margin-bottom: 26px;
+        }
+
+        p {
+            font-size: 30px;
+            margin: 55px 0 40px;
+        }
+
+        .aboutUs_content-signature {
+            align-self: flex-end;
+        }
+    }
+}
