@@ -33,28 +33,33 @@ const ContactForm = () => {
     return (
         <Form onSubmit={handleSubmit(onSubmit)}>
             <Row className="mb-3">
-                <Form.Group as={Col} controlId="formGridEmail">
+                <Form.Group as={Col} controlId="formGridName">
                     <Form.Label>Wpisz swoje imię</Form.Label>
-                    <Form.Control type="text" placeholder="Krzysztof" ref={nameRef} {...register("name", {required: true, maxLength: 20,  pattern: {
+                    <Form.Control type="text" placeholder="Krzysztof" ref={nameRef} {...register("name", {required: true, minLength: 6,  pattern: {
                             value: /^[a-zA-Z]*$/,
-                            message: "invalid email address"
+                            message: "invalid name"
                         }}
                     )} />
-                <p>{errors?.name && "Złe imie"}</p>
+                <p>{errors?.name && "Podane imię jest nieprawidłowe!"}</p>
                 </Form.Group>
 
-                <Form.Group as={Col} controlId="formGridPassword">
+                <Form.Group as={Col} controlId="formGridEmail">
                     <Form.Label>Wpisz swój email</Form.Label>
-                    <Form.Control type="text" placeholder="abc@xyz.pl" ref={emailRef} {...register("email", {required: true, maxLength: 50})} />
+                    <Form.Control type="text" placeholder="abc@xyz.pl" ref={emailRef} {...register("email", {required: true, pattern: {
+                        value: /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/,
+                        message: "invalid email adress"
+                    }}
+                    )} />
+                    <p>{errors?.email && "Podany email jest nieprawidłowy!"}</p>
                 </Form.Group>
             </Row>
 
-            <Form.Group className="mb-3" controlId="formGridAddress1">
+            <Form.Group className="mb-3" controlId="formGridMessage">
                 <Form.Label>Wpisz swoją wiadomość</Form.Label>
                 <Form.Control as="textarea" rows={5} placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel neque posuere, auctor lorem non, porta tortor. Quisque vehicula nisi et massa commodo porttitor. Mauris facilisis ullamcorper urna ut semper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum arcu nunc, facilisis et nunc in, consequat convallis lorem." ref={msgRef} {...register("message", {required: true, minLength: 120})} />
             </Form.Group>
             {console.log(errors)}
-            <p>{errors?.message?.type}</p>
+            <p>{errors?.message && "Wiadomość musi mieć conajmniej 120 znaków!"}</p>
             <Button disabled={isDirty} variant="primary" type="submit">
                 Wyślij
             </Button>
