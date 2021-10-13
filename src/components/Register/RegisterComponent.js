@@ -39,18 +39,20 @@ const RegisterComponent = () => {
                 <img src={decoration} alt="decoration" />
             </div>
             <Form onSubmit={handleSubmit}>
-                <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Label>Email</Form.Label>
-                    <Form.Control type="email" ref={emailRef} required />
-                </Form.Group>
-                <Form.Group className="mb-3" controlId="formBasicPassword">
-                    <Form.Label>Hasło</Form.Label>
-                    <Form.Control type="password" ref={passwordRef} required />
-                </Form.Group>
-                <Form.Group className="mb-3" controlId="password-confirm">
-                    <Form.Label>Powtórz hasło</Form.Label>
-                    <Form.Control type="password" ref={passwordConfirmRef} required />
-                </Form.Group>
+                <div className="formComponent_inputs">
+                    <Form.Group className="mb-3" controlId="formBasicEmail">
+                        <Form.Label>Email</Form.Label>
+                        <Form.Control type="email" ref={emailRef} required />
+                    </Form.Group>
+                    <Form.Group className="mb-3" controlId="formBasicPassword">
+                        <Form.Label>Hasło</Form.Label>
+                        <Form.Control type="password" ref={passwordRef} required minLength="6" />
+                    </Form.Group>
+                    <Form.Group className="mb-3" controlId="password-confirm">
+                        <Form.Label>Powtórz hasło</Form.Label>
+                        <Form.Control type="password" ref={passwordConfirmRef} required minLength="6" />
+                    </Form.Group>
+                </div>
                 <div className="formComponent_buttons">
                     <Link to="/logowanie">Zaloguj się</Link>
                     <Button disabled={loading} variant="outline-dark" type="submit">Załóż konto</Button>

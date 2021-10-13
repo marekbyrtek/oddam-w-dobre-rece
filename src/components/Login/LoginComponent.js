@@ -34,14 +34,16 @@ const LoginComponent = () => {
                 <img src={decoration} alt="decoration" />
             </div>
             <Form onSubmit={handleSubmit}>
-                <Form.Group className="mb-3" controlId="email">
-                    <Form.Label>Email</Form.Label>
-                    <Form.Control type="email" ref={emailRef} required />
-                </Form.Group>
-                <Form.Group className="mb-3" controlId="password">
-                    <Form.Label>Hasło</Form.Label>
-                    <Form.Control type="password" ref={passwordRef} required />
-                </Form.Group>
+                <div className="formComponent_inputs">
+                    <Form.Group className="mb-3" controlId="email">
+                        <Form.Label>Email</Form.Label>
+                        <Form.Control type="email" ref={emailRef} required />
+                    </Form.Group>
+                    <Form.Group className="mb-3" controlId="password">
+                        <Form.Label>Hasło</Form.Label>
+                        <Form.Control type="password" ref={passwordRef} required minLength="6" />
+                    </Form.Group>
+                </div>
                 <div className="formComponent_buttons">
                     <Link to="/rejestracja">Załóż konto</Link>
                     <Button disabled={loading} variant="outline-dark" type="submit">Zaloguj się</Button>

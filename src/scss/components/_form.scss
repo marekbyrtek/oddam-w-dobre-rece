@@ -24,8 +24,23 @@
         form {
             width: 100%;
 
-            .form-group {
-                padding: 0 60px;
+            .formComponent_inputs {
+                background-color: $color-first;
+                width: 80%;
+                margin: 0 auto;
+                padding: 40px 0;
+
+                .form-group {
+                    padding: 0 60px;
+                    color: $color-fifth;
+
+                    input {
+                        border: none;
+                        border-radius: 0;
+                        background-color: $color-first;
+                        border-bottom: 1px solid $color-fifth;
+                    }
+                }
             }
 
             .formComponent_buttons {
