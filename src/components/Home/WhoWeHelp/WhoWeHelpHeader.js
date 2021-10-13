@@ -5,7 +5,9 @@ const WhoWeHelpHeader = () => {
     return (
         <>
             <h1>Komu pomagamy?</h1>
-            <img src={decoration} alt="decoration" />
+            <div>
+                <img src={decoration} alt="decoration" />
+            </div>
         </>
     )
 }

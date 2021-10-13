@@ -1,0 +1,41 @@
+.whoWeHelp {
+    margin: 70px 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        font-size: 38px;
+        font-weight: normal;
+    }
+
+    img {
+        margin: 25px 0 50px;
+    }
+
+    .list-group {
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        border-radius: 0;
+
+        button {
+            font-size: 24px;
+            border: 1px solid rgba(0, 0, 0, 0);
+            text-decoration: none;
+            color: $color-fifth;
+            border-radius: 0;
+            width: 210px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            &:hover {
+                border-color: $color-fifth;
+            }
+        }
+    }
+}

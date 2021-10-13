@@ -39,6 +39,12 @@
                         border-radius: 0;
                         background-color: $color-first;
                         border-bottom: 1px solid $color-fifth;
+                        padding: 0;
+
+                        &:focus {
+                            outline: none;
+                            box-shadow: none;
+                        }
                     }
                 }
             }

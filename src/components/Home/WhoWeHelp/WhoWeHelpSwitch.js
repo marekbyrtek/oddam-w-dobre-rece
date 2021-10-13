@@ -7,13 +7,13 @@ const WhoWeHelpSwitch = () => {
     return (
         <Tab.Container id="list-group-tabs-example" defaultActiveKey="#link1">
             <ListGroup horizontal>
-                <ListGroup.Item  onClick={() => setApiList("foundations")} action href="#link1">
+                <ListGroup.Item as="button" onClick={() => setApiList("foundations")} action href="#link1">
                     Fundacjom
                 </ListGroup.Item>
-                <ListGroup.Item onClick={() => setApiList("organizations")} action href="#link2">
+                <ListGroup.Item as="button" onClick={() => setApiList("organizations")} action href="#link2">
                     Organizacjom pozarządowym
                 </ListGroup.Item>
-                <ListGroup.Item  onClick={() => setApiList("local")} action href="#link3">
+                <ListGroup.Item as="button" onClick={() => setApiList("local")} action href="#link3">
                     Lokalnym zbiórkom
                 </ListGroup.Item>
             </ListGroup>

@@ -33,11 +33,11 @@ const LoginComponent = () => {
             <div className="formComponent-img">
                 <img src={decoration} alt="decoration" />
             </div>
-            <Form onSubmit={handleSubmit}>
+            <Form noValidate onSubmit={handleSubmit}>
                 <div className="formComponent_inputs">
                     <Form.Group className="mb-3" controlId="email">
                         <Form.Label>Email</Form.Label>
-                        <Form.Control type="email" ref={emailRef} required />
+                        <Form.Control type="text" ref={emailRef} required pattern="^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$" />
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="password">
                         <Form.Label>Hasło</Form.Label>

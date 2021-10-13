@@ -42,7 +42,7 @@ const RegisterComponent = () => {
                 <div className="formComponent_inputs">
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>Email</Form.Label>
-                        <Form.Control type="email" ref={emailRef} required />
+                        <Form.Control type="text" ref={emailRef} required pattern="^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$" />
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="formBasicPassword">
                         <Form.Label>Hasło</Form.Label>
