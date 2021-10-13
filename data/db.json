@@ -1,10 +1,116 @@
 {
-  "messages": [
+  "foundations": [
     {
-      "imię": "we dasa",
-      "email": "dad@aa.pl",
-      "wiadomość": "asdfa  asidu fopasasfdasdfa sdf asdf ase ras fdhstry dsrt adg adsf asdf aser dg fdfi hj dfgh dfhg sfgh sdfg sd fp[as idfp[o asdf asdf ",
+      "name": "Fundacja 1",
+      "purpose": "Lorem ipsum dolor sit amet",
+      "things": "Ut, aliquam, purus, sit, amet",
       "id": 1
+    },
+    {
+      "name": "Fundacja 2",
+      "purpose": "Lorem ipsum dolor sit amet",
+      "things": "Ut, aliquam, purus, sit, amet",
+      "id": 2
+    },
+    {
+      "name": "Fundacja 3",
+      "purpose": "Lorem ipsum dolor sit amet",
+      "things": "Ut, aliquam, purus, sit, amet",
+      "id": 3
+    },
+    {
+      "name": "Fundacja 4",
+      "purpose": "Lorem ipsum dolor sit amet",
+      "things": "Ut, aliquam, purus, sit, amet",
+      "id": 4
+    },
+    {
+      "name": "Fundacja 5",
+      "purpose": "Lorem ipsum dolor sit amet",
+      "things": "Ut, aliquam, purus, sit, amet",
+      "id": 5
+    },
+    {
+      "name": "Fundacja 6",
+      "purpose": "Lorem ipsum dolor sit amet",
+      "things": "Ut, aliquam, purus, sit, amet",
+      "id": 6
+    },
+    {
+      "name": "Fundacja 7",
+      "purpose": "Lorem ipsum dolor sit amet",
+      "things": "Ut, aliquam, purus, sit, amet",
+      "id": 7
+    },
+    {
+      "name": "Fundacja 8",
+      "purpose": "Lorem ipsum dolor sit amet",
+      "things": "Ut, aliquam, purus, sit, amet",
+      "id": 8
+    },
+    {
+      "name": "Fundacja 9",
+      "purpose": "Lorem ipsum dolor sit amet",
+      "things": "Ut, aliquam, purus, sit, amet",
+      "id": 9
+    }
+  ],
+  "organizations": [
+    {
+      "name": "Organizacja 1",
+      "purpose": "Lorem ipsum dolor sit amet",
+      "things": "Ut, aliquam, purus, sit, amet",
+      "id": 1
+    },
+    {
+      "name": "Organizacja 2",
+      "purpose": "Lorem ipsum dolor sit amet",
+      "things": "Ut, aliquam, purus, sit, amet",
+      "id": 2
+    },
+    {
+      "name": "Organizacja 3",
+      "purpose": "Lorem ipsum dolor sit amet",
+      "things": "Ut, aliquam, purus, sit, amet",
+      "id": 3
+    },
+    {
+      "name": "Organizacja 4",
+      "purpose": "Lorem ipsum dolor sit amet",
+      "things": "Ut, aliquam, purus, sit, amet",
+      "id": 4
+    },
+    {
+      "name": "Organizacja 5",
+      "purpose": "Lorem ipsum dolor sit amet",
+      "things": "Ut, aliquam, purus, sit, amet",
+      "id": 5
+    },
+    {
+      "name": "Organizacja 6",
+      "purpose": "Lorem ipsum dolor sit amet",
+      "things": "Ut, aliquam, purus, sit, amet",
+      "id": 6
+    }
+  ],
+  "local": [
+    {
+      "name": "Zbiórka 1",
+      "purpose": "Lorem ipsum dolor sit amet",
+      "things": "Ut, aliquam, purus, sit, amet",
+      "id": 1
+    },
+    {
+      "name": "Zbiórka 2",
+      "purpose": "Lorem ipsum dolor sit amet",
+      "things": "Ut, aliquam, purus, sit, amet",
+      "id": 2
+    },
+    {
+      "name": "Zbiórka 3",
+      "purpose": "Lorem ipsum dolor sit amet",
+      "things": "Ut, aliquam, purus, sit, amet",
+      "id": 3
     }
   ]
 }

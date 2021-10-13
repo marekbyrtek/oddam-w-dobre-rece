@@ -1,18 +1,21 @@
-import React from "react";
-import { Link, Element } from "react-scroll";
+import React, { useState, createContext } from "react";
+import { Element } from "react-scroll";
+import WhoWeHelpHeader from "./WhoWeHelpHeader";
+import WhoWeHelpList from "./WhoWeHelpList";
+import WhoWeHelpSwitch from "./WhoWeHelpSwitch";
+
+export const ListContext = createContext("")
 
 const HomeWhoWeHelp = () => {
+    const [apiList, setApiList] = useState("foundations")
+    
     return (
-        <Element name="whoWeHelp" style={{height: "100vh"}}>
-            <h1>Komu pomagamy</h1>
-            <ul>
-                <li><Link to="header" smooth={true} duration={1000}>Nagłówek</Link></li>
-                <li><Link to="threeColumns" smooth={true} duration={1000}>Trzy kolumny</Link></li>
-                <li><Link to="fourSteps" smooth={true} duration={1000}>Wystarczą 4 proste kroki</Link></li>
-                <li><Link to="aboutUs" smooth={true} duration={1000}>O nas</Link></li>
-                <li><Link to="whoWeHelp" smooth={true} duration={1000}>Komu pomagamy</Link></li>
-                <li><Link to="contact" smooth={true} duration={1000}>Skontaktuj się z nami</Link></li>
-            </ul>
+        <Element name="whoWeHelp" className="whoWeHelp">
+            <ListContext.Provider value={{ apiList, setApiList }}>
+                <WhoWeHelpHeader />
+                <WhoWeHelpSwitch />
+                <WhoWeHelpList />
+            </ListContext.Provider>
         </Element>
     )
 }
