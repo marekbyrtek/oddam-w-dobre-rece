@@ -1,7 +1,14 @@
 import React from "react";
+import HeaderNav from "../Home/Header/HeaderNav";
+import LoginComponent from "./LoginComponent";
 
 const Login = () => {
-    return <h1>Logowanie</h1>
+    return (
+        <div className="form">
+            <HeaderNav />
+            <LoginComponent />
+        </div>
+    )
 }
 
 export default Login;

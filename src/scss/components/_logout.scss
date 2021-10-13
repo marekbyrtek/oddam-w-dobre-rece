@@ -1,0 +1,36 @@
+.logout {
+    margin:0 140px;
+    display: flex;
+    flex-direction: column;
+
+    .logoutComponent {
+        margin-top: 130px;
+        max-width: 500px;
+        width: 100%;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+            text-align: center;
+            font-size: 40px;
+            font-weight: normal;
+        }
+
+        img {
+            margin: 25px 0 35px;
+        }
+
+        .btn {
+            border-color: $color-fifth;
+            border-radius: 0;
+            font-size: 18px;
+            font-weight: lighter;
+
+            &:hover {
+                background-color: $color-fifth;
+            }
+        }
+    }
+}

@@ -2,6 +2,7 @@ import React from "react";
 import User from "./User";
 import { Nav } from "react-bootstrap";
 import { Link } from "react-scroll";
+import { Link as LinkRoute } from "react-router-dom";
 
 const HeaderNav = () => {
     return (
@@ -9,7 +10,7 @@ const HeaderNav = () => {
             <User />
             <Nav className="justify-content-end header_nav_scroll">
                 <Nav.Item>
-                    <Link to="threeColumns" duration={1000}>Start</Link>
+                    <LinkRoute to="/">Start</LinkRoute>
                 </Nav.Item>
                 <Nav.Item>
                     <Link to="fourSteps" duration={1000}>O co chodzi?</Link>

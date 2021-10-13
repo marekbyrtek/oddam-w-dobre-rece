@@ -51,12 +51,13 @@
         }
     }
 
-    button {
+    .btn {
         border-radius: 0;
         border-color: $color-fifth;
         color: $color-fifth;
         width: 310px;
         font-size: 36px;
+        font-weight: lighter;
         text-align: center;
         padding: 13px;
 

@@ -1,0 +1,51 @@
+.header_nav {
+    margin-top: 37px;
+
+    .header_nav_user {
+
+        p {
+            color: #000000;
+            font-size: 14px;
+            margin: 0;
+        }
+
+        a {
+            color: $color-fifth;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        .btn {
+            border-color: $color-third;
+            border-radius: 0;
+            margin-left: 20px;
+
+            &:hover {
+                background-color: $color-third;
+            }
+        }
+
+    }
+
+    .header_nav_scroll {
+        margin-top: 17px;
+
+        .nav-item {
+            margin-left: 15px;
+            font-size: 18px;
+            cursor: pointer;
+
+            a {
+                padding: 9px 20px;
+                border: 1px solid rgba(0, 0, 0, 0);
+                text-decoration: none;
+                color: $color-fifth;
+
+                &:hover {
+                    border-color: $color-fifth;
+                }
+            }
+        }
+    }
+}
