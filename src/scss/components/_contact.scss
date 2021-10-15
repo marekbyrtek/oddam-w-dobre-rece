@@ -25,6 +25,105 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            width: 530px;
+
+            h2 {
+                font-size: 38px;
+                font-weight: normal;
+            }
+
+            img {
+                margin: 25px 0 10px;
+            }
+
+            form {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+
+                .success {
+                    min-height: 50px;
+                    margin: 0 0 10px;
+                    color: green;
+                    font-weight: bold;
+                    max-width: 250px;
+                    align-self: center;
+                    text-align: center;
+                }
+
+                .form-group {
+                    color: $color-fifth;
+                    font-size: 16px;
+
+                    input {
+                        border: none;
+                        border-radius: 0;
+                        border-bottom: 1px solid $color-fifth;
+                        padding: 4px;
+                        font-size: 18px;
+                        background-color: rgba(0, 0, 0, 0);
+                        color: $color-fifth;
+
+                        &::placeholder {
+                            color: #3C3C3C26;
+                        }
+
+                        &:focus {
+                            outline: none;
+                            box-shadow: none;
+                        }
+                    }
+
+                    textarea {
+                        border: none;
+                        border-radius: 0;
+                        border-bottom: 1px solid $color-fifth;
+                        padding: 4px;
+                        font-size: 18px;
+                        background-color: rgba(0, 0, 0, 0);
+                        color: $color-fifth;
+
+                        &::placeholder {
+                            color: #3C3C3C26;
+                        }
+
+                        &:focus {
+                            outline: none;
+                            box-shadow: none;
+                        }
+                    }
+                }
+
+                .error {
+                    min-height: 30px;
+                    margin: 0;
+                    color: red;
+                    font-weight: bold;
+                    font-size: 12px;
+                }
+
+                .input-error {
+                    border-bottom: 1px solid red !important;
+                }
+
+                .btn {
+                    border-color: $color-fifth;
+                    border-radius: 0;
+                    font-size: 18px;
+                    font-weight: lighter;
+                    align-self: flex-end;
+                    padding: 13px 52px;
+
+                    &:hover {
+                        background-color: $color-fifth;
+                    }
+
+                    &:focus {
+                        outline: none;
+                        box-shadow: none;
+                    }
+                }
+            }
         }
     }
 }
