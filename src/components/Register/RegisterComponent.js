@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 import decoration from "../../assets/Decoration.svg";
 import { Form, Button } from "react-bootstrap";
@@ -6,8 +6,6 @@ import { useAuth } from "../AuthContext";
 import { useForm } from 'react-hook-form';
 
 const RegisterComponent = () => {
-    const passwordRef = useRef();
-    const passwordConfirmRef = useRef();
     const [error, setError] = useState("");
     const history = useHistory();
     const { signup } = useAuth();
@@ -47,12 +45,12 @@ const RegisterComponent = () => {
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="formBasicPassword">
                         <Form.Label>Hasło</Form.Label>
-                        <Form.Control className={((errors?.password) || (error==="Hasła się nie zgadzają")) && "input-error"} type="password" ref={passwordRef} {...register("password", {required: true, minLength: 6})} />
+                        <Form.Control className={((errors?.password) || (error==="Hasła się nie zgadzają")) && "input-error"} type="password" {...register("password", {required: true, minLength: 6})} />
                         <p className="error">{errors?.password && "Podane hasło jest za krótkie"}</p>
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="password-confirm">
                         <Form.Label>Powtórz hasło</Form.Label>
-                        <Form.Control className={((errors?.passwordConfirm) || (error==="Hasła się nie zgadzają")) && "input-error"} type="password" ref={passwordConfirmRef} {...register("passwordConfirm", {required: true, minLength: 6})} />
+                        <Form.Control className={((errors?.passwordConfirm) || (error==="Hasła się nie zgadzają")) && "input-error"} type="password" {...register("passwordConfirm", {required: true, minLength: 6})} />
                         <p className="error">{((errors?.passwordConfirm) || (error==="Hasła się nie zgadzają")) && ("Hasła się nie zgadzają")}</p>
                     </Form.Group>
                 </div>
